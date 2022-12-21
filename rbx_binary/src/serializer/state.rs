@@ -248,7 +248,7 @@ impl<'dom, W: Write> SerializerState<'dom, W> {
             to_visit.extend(instance.children());
         }
 
-        self.shared_strings.sort_by(|a, b| a.hash().cmp(&b.hash()));
+        self.shared_strings.sort_by_key(|a| a.hash());
 
         log::debug!("Type info discovered: {:#?}", self.type_infos);
 
