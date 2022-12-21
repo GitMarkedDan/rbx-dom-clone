@@ -2,6 +2,11 @@
 
 ## Unreleased
 
+## 0.6.7 (2022-12-21)
+* Fixed Inconsistent behaviour with Shared Strings. ([#1])
+
+[#1]: Fix Inconsistent behaviour with Shared Strings in rbx_binary 
+
 ## 0.6.6 (2022-06-29)
 * Fixed unserialized properties getting deserialized, like `BasePart.MaterialVariant`. ([#230])
 
